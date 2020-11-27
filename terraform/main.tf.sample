@@ -1,0 +1,12 @@
+module "k8s" {
+  source = "./module-k8s"
+
+  # path of the SSH public key to associate to `core` user
+  ssh_pub_path = ""
+
+  # number of nodes to deploy
+  nb_nodes = 3
+
+  # ETCD discover URL
+  etcd_discovery_url = ""
+}
